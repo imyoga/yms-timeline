@@ -1,7 +1,13 @@
+import { ThemeProvider } from './theme/index.jsx'
+import { Container } from '@mui/material'
+import { ThemeSystem } from './components/ThemeSystem'
+
 export const App = () => {
 	return (
-		<div>
-			<h1>Hello World</h1>
-		</div>
+		<ThemeProvider>
+			<Container maxWidth='lg'>
+				<ThemeSystem />
+			</Container>
+		</ThemeProvider>
 	)
 }
