@@ -16,7 +16,7 @@ import {
  * ThemeSystem component that showcases various MUI components with different theme colors
  * @returns {JSX.Element} A component displaying various themed elements
  */
-export const ThemeSystem = () => {
+export const UiKit = () => {
 	return (
 		<Box sx={{ my: 4 }}>
 			<Typography variant='h3' component='h1' gutterBottom>
