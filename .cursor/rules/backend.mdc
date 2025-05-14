@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Node.js + Express Backend Best Practices
+globs: "backend/**/*"
+alwaysApply: true
+---
+- Use **Express.js** for building RESTful APIs.
+- Apply **modular routing**: separate routes, controllers, and services.
+- Use **async/await** for asynchronous operations.
+- Sanitize inputs and handle errors using centralized **error-handling middleware**.
+- Never expose secrets or config directly; use **environment variables** and a `config/` layer.
+- Use **middleware** wisely for logging, auth, and input parsing.
+- Follow consistent **logging practices** (e.g., `winston`).
+- Always handle promise rejections and avoid unhandled exceptions.
+- Use **ESLint** + **Prettier** for code consistency.
+- Organize project folders using clean structure: `routes/`, `controllers/`, `services/`, `models/`, `middlewares/`.
+- Prefer **named exports** over default exports for clarity.
+

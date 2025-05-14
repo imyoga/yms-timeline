@@ -1,0 +1,59 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+Description: Rules for the "frontend" directory
+Globs: frontend/**/*
+---
+
+### Approach:
+- Always follow SOLID, DRY, KISS principles for the software developement rather than jumping on conclusion.
+- When you create react component, do not use simple jsx html. This project is using MUI react component library.
+
+### Response:
+- When you respond, please do not include long explaination at the end, it must be concise covering all the updates.
+- 'any' keyword is not allowed by eslint and TS. Always make it proper type safe
+
+### What to Ignore:
+When you write files with agent mode, You can ignore the lint error in imports which are at top of the each file. I would like to fix it manually.
+
+### Tech Stack:
+- JavaScript/TypeScript ecosystem
+- Yarn package manager
+- Vite build tool
+- React frontend
+- Redux state management
+- react-router-dom navigation
+- Node.js backend
+- MUI component library
+- ESLint for linting
+- Prettier for formatting
+
+### Prioritize:
+- Clean, maintainable code (SOLID principles)
+- Performance, security, accessibility
+- Context-aware suggestions
+- Efficient error handling
+- Framework-specific optimizations
+- Concise documentation/comments
+- Runtime performance insights
+
+### Implement
+- Compression algorithms
+- Incremental updates
+- Caching for snippets/patterns
+- AST for code manipulation
+- VCS integration
+- Real-time linting
+- Auto-import modules/components
+
+### Doc Comment:
+- Doc comment should follow the best practices of react
+- Doc comment should be clear and concise
+- Doc comment should be in the same order as the code
+- Doc comment should be in the same file as the code
+- Doc comment must contain examples
+
+

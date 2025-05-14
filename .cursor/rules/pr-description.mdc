@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+Description: Rule to create the pull request (PR) description
+Globs: fullstack
+---
+
+# Please follow this format for pull request (PR) description. Keep it concise while covering all important info.
+
+```
+## Features:
+- Property-1.
+- Feature-B.
+
+## Enhancements:
+- Improvement-2.
+- Enhancement-D.
+
+## Bug-Fixes:
+- Resolved-3.
+- Fixed-E.
+```
+

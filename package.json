@@ -1,0 +1,17 @@
+{
+	"name": "yms-timeline",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": [
+		"./frontend",
+		"./backend"
+	],
+	"scripts": {
+		"dev": "concurrently \"yarn workspace @yms-timeline/frontend dev\" \"yarn workspace @yms-timeline/backend dev\"",
+		"build": "yarn workspace @yms-timeline/frontend build",
+		"start:prod": "yarn workspace @yms-timeline/backend start"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2"
+	}
+}
