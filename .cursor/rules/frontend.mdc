@@ -9,6 +9,7 @@ Globs: frontend/**/*
 ---
 
 ### Approach:
+- Do not use npm to install dependancies. I am using yarn in this project.
 - Always follow SOLID, DRY, KISS principles for the software developement rather than jumping on conclusion.
 - When you create react component, do not use simple jsx html. This project is using MUI react component library.
 
