@@ -11,9 +11,6 @@ import { UiKit } from '../components/UIKit'
 export const UiKitPage = () => {
 	return (
 		<Box sx={{ p: 3 }}>
-			<Typography variant='h4' gutterBottom>
-				UI Components
-			</Typography>
 			<Typography variant='body1' paragraph>
 				This page showcases the theme system and UI components used in the
 				application.

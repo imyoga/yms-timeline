@@ -26,9 +26,6 @@ export const Layers = () => {
 
 	return (
 		<Box sx={{ p: 3 }}>
-			<Typography variant='h4' gutterBottom>
-				Layers
-			</Typography>
 			<Typography variant='body1' sx={{ mb: 3 }}>
 				Manage your timeline layers here.
 			</Typography>
