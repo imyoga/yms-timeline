@@ -9,7 +9,7 @@ import { palette } from '../../theme/palette'
  */
 export const ColorsShowcase = () => {
 	return (
-		<Box sx={{ mb: 6 }}>
+		<Box sx={{ m: 0, p: 0 }}>
 			<Typography variant='h4' gutterBottom>
 				Colors
 			</Typography>

@@ -40,9 +40,21 @@ export const AppLayout = () => {
 					homeUrl: '/dashboard',
 				}}
 			>
-				<DashboardLayout>
-					<PageContainer>
-						<Outlet />
+				<DashboardLayout
+					defaultSidebarCollapsed
+					sx={{ border: '2px solid blue' }}
+				>
+					<PageContainer
+						title=''
+						breadcrumbs={[]}
+						maxWidth={false}
+						disableGutters
+						sx={{
+							border: '2px solid green',
+							width: '100%',
+						}}
+					>
+						<Outlet/>
 					</PageContainer>
 				</DashboardLayout>
 			</AppProvider>

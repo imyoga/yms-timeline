@@ -25,7 +25,7 @@ import {
  */
 export const ComponentsShowcase = () => {
 	return (
-		<Box sx={{ mb: 6 }}>
+		<Box sx={{ m: 0, p: 0 }}>
 			<Typography variant='h4' gutterBottom>
 				Components
 			</Typography>

@@ -1,4 +1,4 @@
-import { Typography, Box, Grid, Divider } from '@mui/material'
+import { Typography, Box, Grid, Paper, Divider } from '@mui/material'
 import { shadows } from '../../theme/shadows'
 
 /**
@@ -9,7 +9,7 @@ import { shadows } from '../../theme/shadows'
  */
 export const ShadowsShowcase = () => {
 	return (
-		<Box sx={{ mb: 6 }}>
+		<Box sx={{ m: 0, p: 0 }}>
 			<Typography variant='h4' gutterBottom>
 				Shadows
 			</Typography>

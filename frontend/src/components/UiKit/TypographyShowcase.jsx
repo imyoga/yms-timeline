@@ -8,7 +8,7 @@ import { Typography, Box, Grid, Divider, Paper } from '@mui/material'
  */
 export const TypographyShowcase = () => {
 	return (
-		<Box sx={{ mb: 6 }}>
+		<Box sx={{ m: 0, p: 0 }}>
 			<Typography variant='h4' gutterBottom>
 				Typography
 			</Typography>

@@ -1,6 +1,6 @@
 import { ThemeProvider } from './theme/index.jsx'
 import { RouterProvider } from 'react-router-dom'
-import { router } from './routes/routes'
+import { router } from './routes'
 
 /**
  * Main application component that sets up the router

@@ -8,7 +8,7 @@ import { Typography, Box, Alert, Stack, Divider } from '@mui/material'
  */
 export const AlertsShowcase = () => {
 	return (
-		<Box sx={{ mb: 6 }}>
+		<Box sx={{ m: 0, p: 0 }}>
 			<Typography variant='h4' gutterBottom>
 				Alerts & Feedback
 			</Typography>

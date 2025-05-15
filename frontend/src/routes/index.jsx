@@ -5,7 +5,7 @@ import { Layers } from '../pages/Layers'
 import { Settings } from '../pages/Settings'
 import { NotFound } from '../pages/NotFound'
 import { AppLayout } from '../layouts/AppLayout'
-
+import { UiKitPage } from '../pages/UiKitPage'
 /**
  * Application route configuration
  *
@@ -36,6 +36,10 @@ export const routes = [
 			{
 				path: '/settings',
 				element: <Settings />,
+			},
+			{
+				path: '/ui-kit',
+				element: <UiKitPage />,
 			},
 			{
 				path: '*',

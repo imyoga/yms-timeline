@@ -8,6 +8,40 @@
  */
 
 export const components = {
+	// Global style override for all components
+	MuiCssBaseline: {
+		styleOverrides: {
+			'*': {
+				margin: 0,
+				padding: 0,
+				boxSizing: 'border-box',
+			},
+		},
+	},
+	MuiBox: {
+		styleOverrides: {
+			root: {
+				padding: 0,
+				margin: 0,
+			},
+		},
+	},
+	MuiContainer: {
+		styleOverrides: {
+			root: {
+				padding: 0,
+				margin: 0,
+			},
+		},
+	},
+	MuiStack: {
+		styleOverrides: {
+			root: {
+				padding: 0,
+				margin: 0,
+			},
+		},
+	},
 	MuiButton: {
 		styleOverrides: {
 			root: {

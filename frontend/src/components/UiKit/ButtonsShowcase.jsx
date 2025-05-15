@@ -1,4 +1,4 @@
-import { Typography, Box, Button, Divider } from '@mui/material'
+import { Typography, Box, Button, Grid, Stack, Divider } from '@mui/material'
 
 /**
  * Buttons component that showcases all button variants
@@ -8,7 +8,7 @@ import { Typography, Box, Button, Divider } from '@mui/material'
  */
 export const ButtonsShowcase = () => {
 	return (
-		<Box sx={{ mb: 6 }}>
+		<Box sx={{ m: 0, p: 0 }}>
 			<Typography variant='h4' gutterBottom>
 				Buttons
 			</Typography>

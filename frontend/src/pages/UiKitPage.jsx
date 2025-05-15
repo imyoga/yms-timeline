@@ -10,8 +10,8 @@ import { UiKit } from '../components/UIKit'
  */
 export const UiKitPage = () => {
 	return (
-		<Box sx={{ p: 3 }}>
-			<Typography variant='body1' paragraph>
+		<Box sx={{ border: '1px solid red', m: 0, p: 0 }}>
+			<Typography variant='body1'>
 				This page showcases the theme system and UI components used in the
 				application.
 			</Typography>
