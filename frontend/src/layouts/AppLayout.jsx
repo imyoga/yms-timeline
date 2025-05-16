@@ -3,7 +3,7 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { ThemeProvider } from '../theme'
 import { AppProvider, DashboardLayout, PageContainer } from '@toolpad/core'
 import Box from '@mui/material/Box'
-import { NAVIGATION } from '../routes/navigation'
+import { NAVIGATION } from './navigation'
 
 /**
  * Main application layout that integrates React Router with Toolpad Core

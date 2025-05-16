@@ -8,6 +8,7 @@ import SettingsIcon from '@mui/icons-material/Settings'
 import LayersIcon from '@mui/icons-material/Layers'
 import DescriptionIcon from '@mui/icons-material/Description'
 import PaletteIcon from '@mui/icons-material/Palette'
+import LogoutIcon from '@mui/icons-material/Logout'
 
 /**
  * Application navigation configuration
@@ -57,11 +58,24 @@ export const NAVIGATION = [
 		kind: 'divider',
 	},
 	{
+		kind: 'header',
+		title: 'Settings',
+	},
+	{
 		segment: 'settings',
 		title: 'Settings',
 		icon: <SettingsIcon />,
 		path: '/settings',
 		element: <Settings />,
+	},
+	{
+		kind: 'divider',
+	},
+	{
+		segment: 'logout',
+		title: 'Logout',
+		icon: <LogoutIcon />,
+		path: '/logout',
 	},
 ]
 
