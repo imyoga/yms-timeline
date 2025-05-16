@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { ThemeProvider } from '../theme'
 import { AppProvider, DashboardLayout, PageContainer } from '@toolpad/core'
-import Box from '@mui/material/Box'
 import { NAVIGATION } from './navigation'
 
 /**
@@ -39,6 +38,7 @@ export const AppLayout = () => {
 				branding={{
 					title: 'YMS Timeline',
 					homeUrl: '/dashboard',
+					logo: <img src='/logo/logo.png' alt='YMS Timeline' height='32' />,
 				}}
 			>
 				<DashboardLayout defaultSidebarCollapsed sx={{}}>
@@ -59,7 +59,6 @@ export const AppLayout = () => {
 							},
 							padding: 2,
 						}}
-
 					>
 						<Outlet />
 					</PageContainer>
