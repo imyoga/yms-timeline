@@ -24,6 +24,7 @@ import { typography } from './typography'
 import { shadows } from './shadows'
 import { breakpoints } from './breakpoints'
 import { components } from './components'
+import { GlobalStyles } from '@mui/material'
 
 /**
  * Custom theme object created using MUI's createTheme function
@@ -45,6 +46,8 @@ export const theme = createTheme({
 	},
 })
 
+
+
 /**
  * ThemeProvider component that wraps the application with the theme
  * Also includes CssBaseline for consistent styling across browsers
@@ -57,6 +60,7 @@ export function ThemeProvider({ children }) {
 	return (
 		<MuiThemeProvider theme={theme}>
 			<CssBaseline />
+			{/* <GlobalStyles styles={globalStyles} /> */}
 			{children}
 		</MuiThemeProvider>
 	)

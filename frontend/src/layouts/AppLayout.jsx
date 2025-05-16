@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { ThemeProvider } from '../theme'
 import { AppProvider, DashboardLayout, PageContainer } from '@toolpad/core'
+import Box from '@mui/material/Box'
 import { NAVIGATION } from '../routes/navigation'
 
 /**
@@ -42,7 +43,10 @@ export const AppLayout = () => {
 			>
 				<DashboardLayout
 					defaultSidebarCollapsed
-					sx={{ border: '2px solid blue' }}
+					sx={{
+						border: '2px solid blue',
+						padding: 0,
+					}}
 				>
 					<PageContainer
 						title=''
@@ -52,9 +56,20 @@ export const AppLayout = () => {
 						sx={{
 							border: '2px solid green',
 							width: '100%',
+							padding: 0,
+							margin: 0,
+							'& > .MuiBox-root, & > .MuiStack-root': {
+								margin: '0 !important',
+								padding: '0 !important',
+							},
+							'& .MuiBox-root, & .MuiStack-root': {
+								marginTop: '0 !important',
+								marginBottom: '0 !important',
+							},
 						}}
+						id='page-container'
 					>
-						<Outlet/>
+						<Outlet id='page-outlet' />
 					</PageContainer>
 				</DashboardLayout>
 			</AppProvider>

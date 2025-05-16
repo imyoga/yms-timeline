@@ -12,17 +12,60 @@ export const components = {
 	MuiCssBaseline: {
 		styleOverrides: {
 			'*': {
+				boxSizing: 'border-box',
+			},
+			html: {
 				margin: 0,
 				padding: 0,
-				boxSizing: 'border-box',
+				width: '100%',
+				height: '100%',
+				WebkitOverflowScrolling: 'touch',
+			},
+			body: {
+				margin: 0,
+				padding: 0,
+				width: '100%',
+				height: '100%',
+			},
+			'#root': {
+				width: '100%',
+				height: '100%',
+			},
+			input: {
+				'&[type=number]': {
+					MozAppearance: 'textfield',
+					'&::-webkit-outer-spin-button': {
+						margin: 0,
+						WebkitAppearance: 'none',
+					},
+					'&::-webkit-inner-spin-button': {
+						margin: 0,
+						WebkitAppearance: 'none',
+					},
+				},
+			},
+			img: {
+				maxWidth: '100%',
+				display: 'inline-block',
+				verticalAlign: 'bottom',
 			},
 		},
 	},
 	MuiBox: {
 		styleOverrides: {
 			root: {
-				padding: 0,
-				margin: 0,
+				padding: '0 !important',
+				margin: '0 !important',
+				'&.MuiBox-root': {
+					margin: '0 !important',
+					padding: '0 !important',
+				},
+			},
+		},
+		defaultProps: {
+			sx: {
+				m: 0,
+				p: 0,
 			},
 		},
 	},
@@ -37,8 +80,18 @@ export const components = {
 	MuiStack: {
 		styleOverrides: {
 			root: {
-				padding: 0,
-				margin: 0,
+				padding: '0 !important',
+				margin: '0 !important',
+				'&.MuiStack-root': {
+					margin: '0 !important',
+					padding: '0 !important',
+				},
+			},
+		},
+		defaultProps: {
+			sx: {
+				m: 0,
+				p: 0,
 			},
 		},
 	},
