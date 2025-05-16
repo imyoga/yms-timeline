@@ -9,7 +9,7 @@ import { Box, Typography, Card, CardContent, Grid } from '@mui/material'
  */
 export const Pages = () => {
 	return (
-		<Box sx={{ border: '1px solid red' }}>
+		<Box>
 			<Typography variant='body1' sx={{ mb: 3 }}>
 				Manage your content pages here.
 			</Typography>

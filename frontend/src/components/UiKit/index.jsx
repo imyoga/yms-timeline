@@ -14,7 +14,7 @@ import { AlertsShowcase } from './AlertsShowcase'
  */
 export const UiKit = () => {
 	return (
-		<Box sx={{ border: '1px solid blue', m: 0, p: 0 }}>
+		<Box >
 			<TypographyShowcase />
 			<ColorsShowcase />
 			<ShadowsShowcase />

@@ -41,23 +41,14 @@ export const AppLayout = () => {
 					homeUrl: '/dashboard',
 				}}
 			>
-				<DashboardLayout
-					defaultSidebarCollapsed
-					sx={{
-						border: '2px solid blue',
-						padding: 0,
-					}}
-				>
+				<DashboardLayout defaultSidebarCollapsed sx={{}}>
 					<PageContainer
 						title=''
 						breadcrumbs={[]}
 						maxWidth={false}
 						disableGutters
 						sx={{
-							border: '2px solid green',
 							width: '100%',
-							padding: 0,
-							margin: 0,
 							'& > .MuiBox-root, & > .MuiStack-root': {
 								margin: '0 !important',
 								padding: '0 !important',
@@ -66,10 +57,11 @@ export const AppLayout = () => {
 								marginTop: '0 !important',
 								marginBottom: '0 !important',
 							},
+							padding: 2,
 						}}
-						id='page-container'
+
 					>
-						<Outlet id='page-outlet' />
+						<Outlet />
 					</PageContainer>
 				</DashboardLayout>
 			</AppProvider>
