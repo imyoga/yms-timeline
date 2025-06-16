@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: true})) // for parsing application/x-www-f
 app.use(logger)
 
 // Routes
-app.use(router)
+app.use('/api', router)
 
 app.get('/', async (req, res) => {
 	res.status(200).send('Hello from server')

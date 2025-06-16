@@ -14,7 +14,6 @@ Always follow SOLID, DRY, KISS principles for the software developement rather t
 
 Response:
 - When you respond, please do not include long explaination at the end, it must be concise covering all the updates.
-- 'any' keyword is not allowed by eslint and TS. Always make it proper type safe
 
 Ignore:
 You can ignore the imports the lint error in imports, The reason is that eslint wants it to have in certain order, you may not get your head around it.
