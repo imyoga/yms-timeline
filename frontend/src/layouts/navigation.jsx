@@ -1,9 +1,11 @@
 import { Dashboard } from '../pages/Dashboard'
+import { Timeline } from '../pages/Timeline'
 import { Pages } from '../pages/Pages'
 import { Layers } from '../pages/Layers'
 import { Settings } from '../pages/Settings'
 import { UiKitPage } from '../pages/UiKitPage'
 import DashboardIcon from '@mui/icons-material/Dashboard'
+import TimelineIcon from '@mui/icons-material/Timeline'
 import SettingsIcon from '@mui/icons-material/Settings'
 import LayersIcon from '@mui/icons-material/Layers'
 import DescriptionIcon from '@mui/icons-material/Description'
@@ -32,6 +34,13 @@ export const NAVIGATION = [
 	{
 		kind: 'header',
 		title: 'Content',
+	},
+	{
+		segment: 'timeline',
+		title: 'Timeline',
+		icon: <TimelineIcon />,
+		path: '/timeline',
+		element: <Timeline />,
 	},
 	{
 		segment: 'pages',

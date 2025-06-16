@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Dashboard } from '../pages/Dashboard'
+import { Timeline } from '../pages/Timeline'
 import { Pages } from '../pages/Pages'
 import { Layers } from '../pages/Layers'
 import { Settings } from '../pages/Settings'
@@ -24,6 +25,10 @@ export const routes = [
 			{
 				path: '/dashboard',
 				element: <Dashboard />,
+			},
+			{
+				path: '/timeline',
+				element: <Timeline />,
 			},
 			{
 				path: '/pages',
