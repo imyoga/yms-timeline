@@ -1,5 +1,6 @@
-import { UiKit } from "../components/UIKit";
-import { PageWrapper } from "./PageWrapper";
+import { UiKit } from '../components/UIKit'
+
+import { PageWrapper } from './PageWrapper'
 
 /**
  * UI page component that showcases theme system and UI components
@@ -9,9 +10,9 @@ import { PageWrapper } from "./PageWrapper";
  * <UI />
  */
 export const UiKitPage = () => {
-  return (
-    <PageWrapper>
-      <UiKit />
-    </PageWrapper>
-  );
-};
+	return (
+		<PageWrapper>
+			<UiKit />
+		</PageWrapper>
+	)
+}

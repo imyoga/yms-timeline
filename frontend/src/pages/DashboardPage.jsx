@@ -1,5 +1,6 @@
-import { PageWrapper } from "./PageWrapper";
-import { Dashboard } from "../components/Dashboard";
+import { Dashboard } from '../components/Dashboard'
+
+import { PageWrapper } from './PageWrapper'
 /**
  * Dashboard page component
  *
@@ -8,9 +9,9 @@ import { Dashboard } from "../components/Dashboard";
  * <Dashboard />
  */
 export const DashboardPage = () => {
-  return (
-    <PageWrapper>
-      <Dashboard />
-    </PageWrapper>
-  );
-};
+	return (
+		<PageWrapper>
+			<Dashboard />
+		</PageWrapper>
+	)
+}

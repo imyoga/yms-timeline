@@ -1,4 +1,5 @@
 import { Box } from '@mui/material'
+
 import { TypographyShowcase } from './TypographyShowcase'
 import { ColorsShowcase } from './ColorsShowcase'
 import { ShadowsShowcase } from './ShadowsShowcase'
@@ -14,7 +15,7 @@ import { AlertsShowcase } from './AlertsShowcase'
  */
 export const UiKit = () => {
 	return (
-		<Box >
+		<Box>
 			<TypographyShowcase />
 			<ColorsShowcase />
 			<ShadowsShowcase />

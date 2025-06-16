@@ -30,13 +30,9 @@ export const NotFound = () => {
 					Page Not Found
 				</Typography>
 				<Typography variant='body1' sx={{ mb: 4 }}>
-					The page you are looking for doesn't exist or has been moved.
+					The page you are looking for doesn&apos;t exist or has been moved.
 				</Typography>
-				<Button
-					variant='contained'
-					color='primary'
-					onClick={() => navigate('/dashboard')}
-				>
+				<Button variant='contained' color='primary' onClick={() => navigate('/dashboard')}>
 					Back to Dashboard
 				</Button>
 			</Box>

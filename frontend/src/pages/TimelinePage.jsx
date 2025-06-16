@@ -1,5 +1,6 @@
-import { Timeline } from "../components/Timeline";
-import {PageWrapper} from "./PageWrapper";
+import { Timeline } from '../components/Timeline'
+
+import { PageWrapper } from './PageWrapper'
 /**
  * Timeline page component
  * Displays timeline functionality and controls
@@ -8,9 +9,9 @@ import {PageWrapper} from "./PageWrapper";
  * <Timeline />
  */
 export const TimelinePage = () => {
-  return (
-    <PageWrapper>
-      <Timeline />
-    </PageWrapper>
-  );
-};
+	return (
+		<PageWrapper>
+			<Timeline />
+		</PageWrapper>
+	)
+}

@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from 'react'
 
 // Constants
 const API_ENDPOINTS = {
-  EVENTS: "/api/timeline/events",
-};
+	EVENTS: '/api/timeline/events',
+}
 
 /**
  * Custom hook for managing timeline events
@@ -11,69 +11,71 @@ const API_ENDPOINTS = {
  * @returns {Object} Timeline events state and methods
  */
 export const useTimelineEvents = () => {
-  const [events, setEvents] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const hasFetchedRef = useRef(false);
+	const [events, setEvents] = useState([])
+	const [loading, setLoading] = useState(true)
+	const [error, setError] = useState(null)
+	const hasFetchedRef = useRef(false)
 
-  /**
-   * Fetches events from the API
-   */
-  const fetchEvents = async () => {
-    if (hasFetchedRef.current) return;
-    
-    setLoading(true);
-    setError(null);
-    hasFetchedRef.current = true;
+	/**
+	 * Fetches events from the API
+	 */
+	const fetchEvents = async () => {
+		if (hasFetchedRef.current) {
+			return
+		}
 
-    try {
-      const response = await fetch(API_ENDPOINTS.EVENTS);
-      if (!response.ok) {
-        throw new Error(`Failed to fetch events: ${response.status}`);
-      }
-      const existingEvents = await response.json();
-      setEvents(existingEvents);
-    } catch (err) {
-      setError(err.message);
-      hasFetchedRef.current = false;
-    } finally {
-      setLoading(false);
-    }
-  };
+		setLoading(true)
+		setError(null)
+		hasFetchedRef.current = true
 
-  /**
-   * Adds a new event to the timeline
-   * @param {Object} eventData - The event data to add
-   * @returns {Promise<boolean>} - Success status
-   */
-  const addEvent = async (eventData) => {
-    setError(null);
-    
-    try {
-      const response = await fetch(API_ENDPOINTS.EVENTS, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(eventData),
-      });
+		try {
+			const response = await fetch(API_ENDPOINTS.EVENTS)
+			if (!response.ok) {
+				throw new Error(`Failed to fetch events: ${response.status}`)
+			}
+			const existingEvents = await response.json()
+			setEvents(existingEvents)
+		} catch (err) {
+			setError(err.message)
+			hasFetchedRef.current = false
+		} finally {
+			setLoading(false)
+		}
+	}
 
-      if (!response.ok) {
-        throw new Error(`Failed to add event: ${response.status}`);
-      }
+	/**
+	 * Adds a new event to the timeline
+	 * @param {Object} eventData - The event data to add
+	 * @returns {Promise<boolean>} - Success status
+	 */
+	const addEvent = async eventData => {
+		setError(null)
 
-      const newEvent = await response.json();
-      setEvents((prev) => [...prev, newEvent]);
-      return true;
-    } catch (err) {
-      setError(err.message);
-      return false;
-    }
-  };
+		try {
+			const response = await fetch(API_ENDPOINTS.EVENTS, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(eventData),
+			})
 
-  useEffect(() => {
-    fetchEvents();
-  }, []);
+			if (!response.ok) {
+				throw new Error(`Failed to add event: ${response.status}`)
+			}
 
-  return { events, loading, error, addEvent, refetch: fetchEvents };
-}; 
+			const newEvent = await response.json()
+			setEvents(prev => [...prev, newEvent])
+			return true
+		} catch (err) {
+			setError(err.message)
+			return false
+		}
+	}
+
+	useEffect(() => {
+		fetchEvents()
+	}, [])
+
+	return { events, loading, error, addEvent, refetch: fetchEvents }
+}

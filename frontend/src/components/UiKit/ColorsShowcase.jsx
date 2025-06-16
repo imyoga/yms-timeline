@@ -1,4 +1,5 @@
 import { Typography, Box, Grid, Divider } from '@mui/material'
+
 import { palette } from '../../theme/palette'
 
 /**
@@ -140,16 +141,10 @@ export const ColorsShowcase = () => {
 				{Object.entries(palette.grey).map(([key, value]) => (
 					<Grid item xs={6} sm={3} md={2} key={key}>
 						<Box sx={{ bgcolor: `grey.${key}`, p: 3, borderRadius: 1 }}>
-							<Typography
-								variant='subtitle2'
-								sx={{ color: Number(key) > 500 ? 'white' : 'black' }}
-							>
+							<Typography variant='subtitle2' sx={{ color: Number(key) > 500 ? 'white' : 'black' }}>
 								grey.{key}
 							</Typography>
-							<Typography
-								variant='caption'
-								sx={{ color: Number(key) > 500 ? 'white' : 'black' }}
-							>
+							<Typography variant='caption' sx={{ color: Number(key) > 500 ? 'white' : 'black' }}>
 								{value}
 							</Typography>
 						</Box>

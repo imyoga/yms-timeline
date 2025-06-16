@@ -1,10 +1,11 @@
-import { Settings } from "../components/Settings";
-import { PageWrapper } from "./PageWrapper";
+import { Settings } from '../components/Settings'
+
+import { PageWrapper } from './PageWrapper'
 
 export const SettingsPage = () => {
-  return (
-    <PageWrapper>
-      <Settings />
-    </PageWrapper>
-  );
-};
+	return (
+		<PageWrapper>
+			<Settings />
+		</PageWrapper>
+	)
+}

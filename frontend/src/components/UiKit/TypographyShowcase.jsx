@@ -110,11 +110,7 @@ export const TypographyShowcase = () => {
 						<Typography variant='subtitle1' gutterBottom>
 							subtitle1. Lorem ipsum dolor sit amet
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
+						<Typography variant='caption' color='text.secondary' display='block'>
 							fontSize: 1rem, lineHeight: 1.75
 						</Typography>
 						<Divider sx={{ mt: 1 }} />
@@ -125,11 +121,7 @@ export const TypographyShowcase = () => {
 						<Typography variant='subtitle2' gutterBottom>
 							subtitle2. Lorem ipsum dolor sit amet
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
+						<Typography variant='caption' color='text.secondary' display='block'>
 							fontWeight: 500, fontSize: 0.875rem, lineHeight: 1.57
 						</Typography>
 						<Divider sx={{ mt: 1 }} />
@@ -138,14 +130,10 @@ export const TypographyShowcase = () => {
 					{/* Body1 */}
 					<Box sx={{ mb: 3 }}>
 						<Typography variant='body1' gutterBottom>
-							body1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam eu turpis molestie, dictum est a, mattis tellus.
+							body1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+							mattis tellus.
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
+						<Typography variant='caption' color='text.secondary' display='block'>
 							fontSize: 1rem, lineHeight: 1.5
 						</Typography>
 						<Divider sx={{ mt: 1 }} />
@@ -154,14 +142,10 @@ export const TypographyShowcase = () => {
 					{/* Body2 */}
 					<Box sx={{ mb: 3 }}>
 						<Typography variant='body2' gutterBottom>
-							body2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam eu turpis molestie, dictum est a, mattis tellus.
+							body2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+							mattis tellus.
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
+						<Typography variant='caption' color='text.secondary' display='block'>
 							fontSize: 0.875rem, lineHeight: 1.43
 						</Typography>
 						<Divider sx={{ mt: 1 }} />
@@ -172,13 +156,8 @@ export const TypographyShowcase = () => {
 						<Typography variant='button' display='block' gutterBottom>
 							BUTTON TEXT
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
-							fontWeight: 500, fontSize: 0.875rem, lineHeight: 1.75,
-							textTransform: uppercase
+						<Typography variant='caption' color='text.secondary' display='block'>
+							fontWeight: 500, fontSize: 0.875rem, lineHeight: 1.75, textTransform: uppercase
 						</Typography>
 						<Divider sx={{ mt: 1 }} />
 					</Box>
@@ -188,11 +167,7 @@ export const TypographyShowcase = () => {
 						<Typography variant='caption' display='block' gutterBottom>
 							caption text
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
+						<Typography variant='caption' color='text.secondary' display='block'>
 							fontSize: 0.75rem, lineHeight: 1.66
 						</Typography>
 						<Divider sx={{ mt: 1 }} />
@@ -203,13 +178,8 @@ export const TypographyShowcase = () => {
 						<Typography variant='overline' display='block' gutterBottom>
 							OVERLINE TEXT
 						</Typography>
-						<Typography
-							variant='caption'
-							color='text.secondary'
-							display='block'
-						>
-							fontWeight: 500, fontSize: 0.75rem, lineHeight: 2.66,
-							textTransform: uppercase
+						<Typography variant='caption' color='text.secondary' display='block'>
+							fontWeight: 500, fontSize: 0.75rem, lineHeight: 2.66, textTransform: uppercase
 						</Typography>
 					</Box>
 				</Box>

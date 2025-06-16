@@ -39,9 +39,7 @@ export const ComponentsShowcase = () => {
 					<Card>
 						<CardHeader title='Card Title' subheader='Card Subheader' />
 						<CardContent>
-							<Typography variant='body2'>
-								This is a basic card with header and content.
-							</Typography>
+							<Typography variant='body2'>This is a basic card with header and content.</Typography>
 						</CardContent>
 					</Card>
 				</Grid>
@@ -51,9 +49,7 @@ export const ComponentsShowcase = () => {
 							<Typography variant='h6' gutterBottom>
 								Card Title
 							</Typography>
-							<Typography variant='body2'>
-								This is a simple card with just content.
-							</Typography>
+							<Typography variant='body2'>This is a simple card with just content.</Typography>
 						</CardContent>
 					</Card>
 				</Grid>
@@ -70,13 +66,7 @@ export const ComponentsShowcase = () => {
 					<TextField label='Disabled' variant='outlined' disabled fullWidth />
 				</Grid>
 				<Grid item xs={12} md={4}>
-					<TextField
-						label='Error'
-						variant='outlined'
-						error
-						helperText='Error message'
-						fullWidth
-					/>
+					<TextField label='Error' variant='outlined' error helperText='Error message' fullWidth />
 				</Grid>
 			</Grid>
 

@@ -1,5 +1,6 @@
-import { ThemeProvider } from './theme/index.jsx'
 import { RouterProvider } from 'react-router-dom'
+
+import { ThemeProvider } from './theme/index.jsx'
 import { router } from './routes'
 
 /**

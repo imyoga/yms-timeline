@@ -18,15 +18,9 @@ export const AlertsShowcase = () => {
 				Alerts
 			</Typography>
 			<Stack spacing={2} sx={{ mb: 4 }}>
-				<Alert severity='success'>
-					Success alert — This is a success message!
-				</Alert>
-				<Alert severity='info'>
-					Info alert — This is an information message!
-				</Alert>
-				<Alert severity='warning'>
-					Warning alert — This is a warning message!
-				</Alert>
+				<Alert severity='success'>Success alert — This is a success message!</Alert>
+				<Alert severity='info'>Info alert — This is an information message!</Alert>
+				<Alert severity='warning'>Warning alert — This is a warning message!</Alert>
 				<Alert severity='error'>Error alert — This is an error message!</Alert>
 			</Stack>
 
