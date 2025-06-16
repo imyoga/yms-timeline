@@ -1,5 +1,5 @@
-import { Box, Typography } from '@mui/material'
-
+import { PageWrapper } from "./PageWrapper";
+import { Dashboard } from "../components/Dashboard";
 /**
  * Dashboard page component
  *
@@ -8,11 +8,9 @@ import { Box, Typography } from '@mui/material'
  * <Dashboard />
  */
 export const DashboardPage = () => {
-	return (
-		<Box >
-			<Typography variant='body1'>
-				Welcome to the YMS Timeline dashboard. This is your main overview page.
-			</Typography>
-		</Box>
-	)
-}
+  return (
+    <PageWrapper>
+      <Dashboard />
+    </PageWrapper>
+  );
+};

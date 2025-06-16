@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { DashboardPage } from "../pages/DashboardPage";
 import { TimelinePage } from "../pages/TimelinePage";
-import { LayersPage } from "../pages/LayersPage";
-import { Settings } from "../pages/Settings";
+import { SettingsPage } from "../pages/SettingsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { AppLayout } from "../layouts/AppLayout";
 import { UiKitPage } from "../pages/UiKitPage";
@@ -30,12 +29,8 @@ export const routes = [
         element: <TimelinePage />,
       },
       {
-        path: "/layers",
-        element: <LayersPage />,
-      },
-      {
         path: "/settings",
-        element: <Settings />,
+        element: <SettingsPage />,
       },
       {
         path: "/ui-kit",

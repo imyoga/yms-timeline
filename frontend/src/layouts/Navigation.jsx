@@ -1,12 +1,10 @@
 import { DashboardPage } from "../pages/DashboardPage";
 import { TimelinePage } from "../pages/TimelinePage";
-import { LayersPage } from "../pages/LayersPage";
-import { Settings } from "../pages/Settings";
+import { SettingsPage } from "../pages/SettingsPage";
 import { UiKitPage } from "../pages/UiKitPage";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import SettingsIcon from "@mui/icons-material/Settings";
-import LayersIcon from "@mui/icons-material/Layers";
 import PaletteIcon from "@mui/icons-material/Palette";
 import LogoutIcon from "@mui/icons-material/Logout";
 
@@ -40,23 +38,12 @@ export const NAVIGATION = [
     path: "/timeline",
     element: <TimelinePage />,
   },
-
-  {
-    segment: "layers",
-    title: "Layers",
-    icon: <LayersIcon />,
-    path: "/layers",
-    element: <LayersPage />,
-  },
   {
     segment: "ui-kit",
     title: "UI Kit",
     icon: <PaletteIcon />,
     path: "/ui-kit",
     element: <UiKitPage />,
-  },
-  {
-    kind: "divider",
   },
   {
     kind: "header",
@@ -67,10 +54,7 @@ export const NAVIGATION = [
     title: "Settings",
     icon: <SettingsIcon />,
     path: "/settings",
-    element: <Settings />,
-  },
-  {
-    kind: "divider",
+    element: <SettingsPage />,
   },
   {
     segment: "logout",

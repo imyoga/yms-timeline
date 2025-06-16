@@ -43,17 +43,11 @@ export const AppLayout = () => {
       >
         <DashboardLayout defaultSidebarCollapsed>
           <PageContainer
-            title=""
             breadcrumbs={[]}
             maxWidth={false}
-            disableGutters
             sx={{
               padding: 0,
               margin: 0,
-              "& .MuiBox-root, & .MuiStack-root": {
-                margin: "0 !important",
-                padding: "0 !important",
-              },
             }}
           >
             <Outlet />

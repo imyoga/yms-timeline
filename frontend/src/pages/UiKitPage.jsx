@@ -1,5 +1,5 @@
-import { Box, Typography } from '@mui/material'
-import { UiKit } from '../components/UIKit'
+import { UiKit } from "../components/UIKit";
+import { PageWrapper } from "./PageWrapper";
 
 /**
  * UI page component that showcases theme system and UI components
@@ -9,13 +9,9 @@ import { UiKit } from '../components/UIKit'
  * <UI />
  */
 export const UiKitPage = () => {
-	return (
-		<Box>
-			<Typography variant='body1'>
-				This page showcases the theme system and UI components used in the
-				application.
-			</Typography>
-			<UiKit />
-		</Box>
-	)
-}
+  return (
+    <PageWrapper>
+      <UiKit />
+    </PageWrapper>
+  );
+};
