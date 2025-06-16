@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Dashboard } from '../pages/Dashboard'
-import { Timeline } from '../pages/Timeline'
-import { Pages } from '../pages/Pages'
-import { Layers } from '../pages/Layers'
+import { DashboardPage } from '../pages/DashboardPage'
+import { TimelinePage } from '../pages/TimelinePage'
+import { Pages } from '../pages'
+import { LayersPage } from '../pages/LayersPage'
 import { Settings } from '../pages/Settings'
-import { NotFound } from '../pages/NotFound'
+import { NotFoundPage } from '../pages/NotFoundPage'
 import { AppLayout } from '../layouts/AppLayout'
 import { UiKitPage } from '../pages/UiKitPage'
 /**
@@ -16,19 +16,19 @@ export const routes = [
 	{
 		path: '/',
 		element: <AppLayout />,
-		errorElement: <NotFound />,
+		errorElement: <NotFoundPage />,
 		children: [
 			{
 				path: '/',
-				element: <Dashboard />,
+				element: <DashboardPage />,
 			},
 			{
 				path: '/dashboard',
-				element: <Dashboard />,
+				element: <DashboardPage />,
 			},
 			{
 				path: '/timeline',
-				element: <Timeline />,
+				element: <TimelinePage />,
 			},
 			{
 				path: '/pages',
@@ -36,7 +36,7 @@ export const routes = [
 			},
 			{
 				path: '/layers',
-				element: <Layers />,
+				element: <LayersPage />,
 			},
 			{
 				path: '/settings',
@@ -48,7 +48,7 @@ export const routes = [
 			},
 			{
 				path: '*',
-				element: <NotFound />,
+				element: <NotFoundPage />,
 			},
 		],
 	},

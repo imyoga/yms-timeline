@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
  * @example
  * <NotFound />
  */
-export const NotFound = () => {
+export const NotFoundPage = () => {
 	const navigate = useNavigate()
 
 	return (

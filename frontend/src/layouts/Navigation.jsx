@@ -1,7 +1,7 @@
-import { Dashboard } from '../pages/Dashboard'
-import { Timeline } from '../pages/Timeline'
-import { Pages } from '../pages/Pages'
-import { Layers } from '../pages/Layers'
+import { DashboardPage } from '../pages/DashboardPage'
+import { TimelinePage } from '../pages/TimelinePage'
+import { Pages } from '../pages'
+import { LayersPage } from '../pages/LayersPage'
 import { Settings } from '../pages/Settings'
 import { UiKitPage } from '../pages/UiKitPage'
 import DashboardIcon from '@mui/icons-material/Dashboard'
@@ -26,7 +26,7 @@ export const NAVIGATION = [
 		title: 'Dashboard',
 		icon: <DashboardIcon />,
 		path: '/dashboard',
-		element: <Dashboard />,
+		element: <DashboardPage />,
 	},
 	{
 		kind: 'divider',
@@ -40,7 +40,7 @@ export const NAVIGATION = [
 		title: 'Timeline',
 		icon: <TimelineIcon />,
 		path: '/timeline',
-		element: <Timeline />,
+		element: <TimelinePage />,
 	},
 	{
 		segment: 'pages',
@@ -54,7 +54,7 @@ export const NAVIGATION = [
 		title: 'Layers',
 		icon: <LayersIcon />,
 		path: '/layers',
-		element: <Layers />,
+		element: <LayersPage />,
 	},
 	{
 		segment: 'ui-kit',

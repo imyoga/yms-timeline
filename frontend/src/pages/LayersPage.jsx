@@ -17,7 +17,7 @@ import LayersIcon from '@mui/icons-material/Layers'
  * @example
  * <Layers />
  */
-export const Layers = () => {
+export const LayersPage = () => {
 	const layersList = [
 		{ id: 1, name: 'Background Layer', type: 'Base' },
 		{ id: 2, name: 'Content Layer', type: 'Dynamic' },

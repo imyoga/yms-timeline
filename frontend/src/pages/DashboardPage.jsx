@@ -7,7 +7,7 @@ import { Box, Typography } from '@mui/material'
  * @example
  * <Dashboard />
  */
-export const Dashboard = () => {
+export const DashboardPage = () => {
 	return (
 		<Box >
 			<Typography variant='body1'>
